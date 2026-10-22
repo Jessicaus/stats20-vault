@@ -56,7 +56,7 @@ typeof(c(1, 2, 3))                  # -> "double"
 0.1 + 0.2 == 0.3                    # -> FALSE
 big <- 1:10 + 1e10
 var(big)                                       # -> 9.166667 (correct)
-(sum(big^2) - 10 * mean(big)^2) / 9            # -> 0 (one-pass formula, rounding error)
+(sum(big^2) - 10 * mean(big)^2) / 9            # -> garbage, not 9.17 (-14563.56 in R 4.6; 0 on the slides). Rounding error
 mean(c(51, NA, 57))                 # -> NA
 mean(c(51, NA, 57), na.rm = TRUE)   # -> 54
 sum(!is.na(c(51, NA, 57)))          # -> 2
