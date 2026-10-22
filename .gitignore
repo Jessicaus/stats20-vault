@@ -11,3 +11,6 @@
 .RData
 .Rproj.user/
 *.Rproj.user
+
+# Course PDFs (copyrighted course material, kept local only)
+sources/*.pdf
