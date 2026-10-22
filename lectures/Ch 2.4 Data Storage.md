@@ -48,7 +48,7 @@ sum(!is.na(times))           # 2 (the real n)
 ## Exam traps
 - `x[11]` on a length-10 vector is `NA`, not an error.
 - `identical(c(1, 2, 3), 1:3)` is `FALSE` because double isn't integer. See [[Ch 2.8 Logical Expressions]].
-- With `x <- 1:10 + 1e10`, `var(x)` is `9.166667`, but the one-pass formula gives `0`. That doesn't mean the variance is 0; it's rounding error.
+- With `x <- 1:10 + 1e10`, `var(x)` is `9.166667`, but the one-pass formula gives garbage: `0` on the slides, `-14563.56` when run in R 4.6. A variance can never be 0 (unless all values match) or negative, so this is rounding error. Use the two-pass formula.
 - `NA` is "unknown", `NULL` is "nothing". Adding `NULL` to a vector adds nothing; adding `NA` adds an element.
 
 ## Predict the output

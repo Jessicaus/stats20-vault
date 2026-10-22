@@ -24,7 +24,8 @@ source: Chapter 1_Slides.pdf
 - **Console prompts:** `>` means ready. `+` means the last command is incomplete (finish it, or press Esc).
 - `[1]` in front of output is the **index** of the first element on that line.
 - `#` starts a **comment**. Comments are required in this class.
-- **Working directory:** the folder R reads from and saves to. Check it with `getwd()` and set it with `setwd("path/with/forward/slashes")`.
+- **Working directory:** the folder R reads from and saves to. Check it with `getwd()` and set it with `setwd("path/with/forward/slashes")`, or use Session > Set Working Directory > Choose Directory (Ctrl+Shift+H).
+- The faint vertical line in the editor marks roughly where the page ends. Code past it may be cut off in the knitted file, so break long lines.
 - Base R ships with practice datasets like `cars` and `pressure`.
 
 ## Functions and syntax
