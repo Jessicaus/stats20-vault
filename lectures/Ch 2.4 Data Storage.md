@@ -17,6 +17,16 @@ source: Chapter 2.4_Slides.pdf
 > [!summary] In one line
 > R stores numbers approximately, so tiny rounding errors happen. Missing or impossible values have special codes: `NA`, `NULL`, `NaN` and `Inf`.
 
+## On the practice midterm
+- **Count NA but not NaN (free response):** `sum(is.na(v) & !is.nan(v))`, because `is.na()` is also `TRUE` for `NaN`. Non-NA count: `length(v) - n_NAs`.
+- **Ignore missing values (free response):** `mean(x, na.rm = TRUE)`.
+- **Explain floating point (free response):** we write numbers in **base 10** and R stores them in **binary (base 2) floating point**, so most decimals are kept only **approximately** (about 15–17 significant digits). Printing `0.086` to 20 decimal places shows the leftover error.
+- **Explain `==` failing:** each operation adds a tiny **rounding error**, so doing the arithmetic in a different order can leave values that differ in the last bits.
+- **Explain huge powers:** `67^10000` is `Inf`. It's finite mathematically, but bigger than the largest storable double (about 1.8e308), so it **overflows**.
+- **One-pass vs two-pass (free response, 1 sentence):** one-pass subtracts two huge nearly-equal numbers, so rounding error can destroy the answer. Two-pass is numerically stable.
+- **`1e-3` notation:** `x_mm * 1e-3` converts mm to m.
+- Worked examples: [[Practice Midterm Patterns]].
+
 ## Key ideas
 - **Floating point:** numbers are stored in binary scientific notation with about 15–17 significant digits (**double precision**). Even `0.1` can't be stored exactly.
 - **Integer vs double:** `"numeric"` means double. `1:3` gives integers; `c(1, 2, 3)` gives doubles. `typeof()` shows the storage type and `mode()` shows the general mode.

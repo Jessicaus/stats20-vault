@@ -90,3 +90,38 @@ TRUE || c("not", "evaluated")       # -> TRUE (short-circuit)
 FALSE && c("not", "evaluated")      # -> FALSE (short-circuit)
 try(TRUE | c("a", "b"))             # -> Error (| evaluates both sides)
 try(c(TRUE, FALSE) && TRUE)         # -> Error (&& needs length 1)
+
+## ---- Practice midterm style ----
+# My own questions in the style of the practice midterm (see course/Practice Midterm Patterns.md)
+x <- -3:3
+x[x <= 0 | x > 2]                   # -> -3 -2 -1 0 3
+x[x < -1 & x > 1]                   # -> integer(0)
+c(0, 2, NA) | c(0, NA, NA)          # -> FALSE TRUE NA (0 is FALSE, non-zero is TRUE)
+c(0, 3, NA) & c(NA, NA, 0)          # -> FALSE NA FALSE
+(1:4 > 2) & c(TRUE, NA)             # -> FALSE FALSE TRUE NA (recycled)
+y <- c(1.9, -2, 3)
+try((1:5)[y])                       # -> Error: only 0's may be mixed with negative subscripts
+c(10, 20, 30, 40, 50)[c(2.7, 1, 4.2)]   # -> 20 10 40 (decimals truncate)
+c(FALSE, 2L, 0.5)                   # -> 0.0 2.0 0.5
+sum(is.na(c(NA, NaN, 1, NaN)))      # -> 3 (NaN counts as NA)
+v <- c(NaN, 2, NA, NA, Inf, NaN, 0, NA, 5, NA)
+sum(is.na(v) & !is.nan(v))          # -> 4
+{ w <- c("a", "b"); w[length(w) + 2] <- "z"; w }   # -> "a" "b" NA "z"
+c(1, 2, 3, 4) * c(1, 10, 100)       # -> 1 20 300 4 + warning
+rep(c(5, 7), times = 2)             # -> 5 7 5 7
+rep(c(5, 7), each = 2)              # -> 5 5 7 7
+-2 + 1:4 * 3                        # -> 1 4 7 10
+exp(2)                              # -> 7.389056 (e squared)
+2e3                                 # -> 2000
+seq_along(c(10, 20, 30))            # -> 1 2 3 (positions, not values)
+(2:11)[c(TRUE, FALSE, FALSE)]       # -> 2 5 8 11
+matrix(rep(1:3, each = 2), nrow = 2)[2, ]   # -> 1 2 3
+B <- matrix(1:9, nrow = 3)
+B[c(3, 1), 2]                       # -> 6 4
+sales <- c(120, NA, 95, NA, 140, 160)
+weekend <- c(FALSE, FALSE, FALSE, FALSE, TRUE, TRUE)
+mean(sales, na.rm = TRUE)           # -> 128.75
+mean(is.na(sales[!weekend]))        # -> 0.5
+mean(is.na(sales[weekend]))         # -> 0
+10^400                              # -> Inf (overflow)
+print(0.3, digits = 17)             # -> 0.29999999999999999 (stored in binary, approximately)

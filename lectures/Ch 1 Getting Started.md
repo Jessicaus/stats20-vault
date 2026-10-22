@@ -17,6 +17,9 @@ source: Chapter 1_Slides.pdf
 > [!summary] In one line
 > Set up R and RStudio, write code in R Markdown, and tell R which folder your files live in.
 
+## On the practice midterm
+- Not tested directly. The style rules from this chapter (**comments are required**, readable beats clever) are what the "rewrite messy code" question grades. See [[Practice Midterm Patterns]].
+
 ## Key ideas
 - **Statistical programming** means writing code to do statistical analysis. R is free, open source, and built for data analysis (it grew out of S / S-PLUS).
 - **RStudio panes:** script editor (top left) · console (bottom left) · environment (top right) · plots, packages and help (bottom right).

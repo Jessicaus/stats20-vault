@@ -17,6 +17,9 @@ source: Chapter 2.5-2.7_Slides.pdf
 > [!summary] In one line
 > **Install** a package once per computer, **load** it with `library()` in every session, and use `?` when you're stuck.
 
+## On the practice midterm
+- Not tested on the practice exam. Know the basics at a glance (install once with `install.packages()`, load every session with `library()`), then spend your time on 2.3, 2.4 and 2.8. See [[Practice Midterm Patterns]].
+
 ## Key ideas
 - A **package** is a bundle of functions, data and documentation. A **library** is the folder where installed packages live.
 - **Base packages** (`base`, `stats`, `graphics`, `datasets`) load automatically. The **tidyverse** is a meta-package containing many packages.

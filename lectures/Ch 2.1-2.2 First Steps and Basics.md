@@ -17,6 +17,12 @@ source: Chapter 2.1-2.2_Slides.pdf
 > [!summary] In one line
 > R is a calculator that stores results in named **objects**, and everything you do is a **function call**.
 
+## On the practice midterm
+- **Valid names (MC):** letters, digits, `.` and `_`, starting with a letter or with a dot not followed by a digit. `.x2` and `my.var_2` are fine. `2fast`, `.2fast`, `_x` and `my var` are not.
+- **`exp()` vs `e` notation (MC):** `3.2 * exp(4)` means 3.2 × e⁴. `4e3` means 4 × 10³ = `4000`, and `1e-3` is 0.001.
+- **Pseudocode (free response):** numbered plain-English steps, one per operation, in order.
+- **Rewrite messy code (free response):** use `<-` not `=`, one step per line (no `;`), descriptive names, comment each fix, remove unused objects and pointless steps like `* 1`. **Never reuse a built-in name** like `mean`, `numeric`, `c`, `class` or `pi`, because it masks the function.
+
 ## Key ideas
 - R is **case-sensitive**: `x`, `X` and `ObJeCt` are different names.
 - **Names** use letters, numbers, `.` and `_`. They must start with a letter (or a dot not followed by a number). No spaces.

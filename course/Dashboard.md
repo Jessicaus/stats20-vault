@@ -16,7 +16,7 @@ The panel below stays blank until the dashboard is running. Once it starts, reop
 
 ## What's in it
 - **Progress:** tick a lecture once you've reviewed it. This saves `reviewed: true` in that note's properties, and changes you make in Obsidian show up here too.
-- **Predict the output:** questions from `r/midterm-practice.R`, one at a time. Guess, press Reveal to see what R prints, then mark whether you got it.
+- **Predict the output:** questions from `r/midterm-practice.R`, one at a time, including the "Practice midterm style" section that matches [[Practice Midterm Patterns]]. Guess, press Reveal to see what R prints, then mark whether you got it.
 - **Vectors lab:** try recycling with your own vectors, plus `rep()` and `seq()` playgrounds. See [[Ch 2.3 Vectors]].
 - **Variance trap:** watch the one-pass formula break as the numbers grow. See [[Ch 2.4 Data Storage]].
 

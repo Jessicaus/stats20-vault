@@ -17,6 +17,9 @@ source: Chapter 2.10_Slides.pdf
 > [!summary] In one line
 > Read data in with `read.table()` / `read.csv()` (getting `header` and `sep` right), write it out with `write.table()` / `write.csv()`, and save R objects with RDS.
 
+## On the practice midterm
+- Not tested on the practice exam. Know the `header` and `sep` defaults for `read.table()` vs `read.csv()` and move on. See [[Practice Midterm Patterns]].
+
 ## Key ideas
 - **Plain text files** (.csv, .txt) are human-readable, open anywhere, and don't change between versions.
 - `read.table(file, header = FALSE, sep = "")` returns a **data frame**.

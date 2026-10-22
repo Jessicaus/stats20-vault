@@ -18,6 +18,7 @@ Intro to Statistical Programming with R · UCLA · Fall 2026 · Prof. Joshua Spa
 > Expect "what does this code output?" questions. See [[Midterm Review]].
 
 Study dashboard (progress tracker and practice quiz): [[Dashboard]]
+What the exam questions look like: [[Practice Midterm Patterns]]
 
 ## Schedule
 

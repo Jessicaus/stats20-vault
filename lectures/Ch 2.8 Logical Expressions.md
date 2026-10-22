@@ -17,6 +17,16 @@ source: Chapter 2.8_Slides.pdf
 > [!summary] In one line
 > Comparisons make TRUE/FALSE vectors. You can count them, combine them with `&` `|` `!`, and use them to subset data.
 
+## On the practice midterm
+- **Parallel vectors (free response):** a condition on one vector picks elements of another: `dates[is.na(pm)]`.
+- **Proportions and counts (free response):** `mean(cond)` is a proportion and `sum(cond)` is a count. Compare groups with `mean(is.na(v[group]))` vs `mean(is.na(v[!group]))`.
+- **Complete cases (free response):** `sum(!is.na(a) & !is.na(b))`.
+- **`|` and `&` on numeric vectors (MC):** numbers are coerced to logical first, **0 → FALSE and any non-zero → TRUE**, then the NA rules apply. `c(0, 2, NA) | c(0, NA, NA)` is `FALSE TRUE NA`.
+- **Logical subsetting (MC):** `x[x < 0 | x > 0]` drops only the zeros, and `x[x < 0 & x > 0]` is empty (`integer(0)`).
+- **NA inside a condition (MC):** `x[!is.na(y) & y > 0]`. The `!is.na(y)` part turns NA positions into `FALSE`, but an NA in `x` itself still comes through as `NA`.
+- **Logical recycling with NA (MC):** `(1:4 > 2) & c(TRUE, NA)` is `FALSE FALSE TRUE NA`.
+- Worked examples: [[Practice Midterm Patterns]].
+
 ## Key ideas
 - **Coercion to logical:** any non-zero number becomes `TRUE`, `0` becomes `FALSE`, and most text becomes `NA` (except `"TRUE"`, `"T"`, `"true"` and similar).
 - **Counting:** `sum(cond)` is the number of TRUEs and `mean(cond)` is the proportion. Add `na.rm = TRUE` if there are NAs.

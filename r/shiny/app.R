@@ -86,7 +86,8 @@ run_like_console <- function(code, env) {
       exprs <- parse(text = code)
       printed <- character(0)
       for (e in exprs) {
-        res <- withVisible(eval(e, env))
+        # capture anything printed while evaluating (like print()), then the auto-printed value
+        printed <- c(printed, capture.output(res <- withVisible(eval(e, env))))
         if (res$visible) printed <- c(printed, capture.output(print(res$value)))
       }
       printed

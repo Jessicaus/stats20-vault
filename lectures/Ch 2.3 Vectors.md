@@ -17,6 +17,17 @@ source: Chapter 2.3_Slides.pdf
 > [!summary] In one line
 > A vector is an ordered set of values of **one type**. R indexes from 1, applies arithmetic element by element, and recycles the shorter vector.
 
+## On the practice midterm
+- **Subset one vector by another (free response):** `height[group == "A"]`, or by position when groups sit in blocks: `x[1:50]`, `x[51:100]`.
+- **Indexing with a vector's own values (MC):** `x[x]` uses the values as positions. Mixed signs give an **error**, decimals truncate toward 0, and 0 is dropped.
+- **Extending a vector (MC):** `v[length(v) + 1] <- "new"` adds one element at the end. Skipping ahead (`+ 2`) fills the gap with `NA`.
+- **Recycling (MC):** know whether the answer comes "with a warning" (lengths aren't multiples) or "without".
+- **`rep()` (MC):** `times` repeats the whole vector, `each` repeats each element. Balanced random groups: `sample(rep(c("A", "B"), each = n / 2))`.
+- **Precedence (MC):** `-5 + 3:5 * 2` is `-5 + ((3:5) * 2)`. `:` binds before `*` and `+`.
+- **Same output? (MC):** `seq_along(v)` returns **positions** `1, 2, ...`, not values. `(3:10)[c(TRUE, FALSE)]` recycles the logical index and keeps every other value.
+- **Matrices (MC):** `matrix(rep(1:4, each = 3), nrow = 3)` fills by column, so every row is `1 2 3 4`. `A[3:2, 3]` takes rows 3 then 2 of column 3, in that order.
+- Worked examples: [[Practice Midterm Patterns]].
+
 ## Key ideas
 - **Vector** = the basic R object. A single number is a vector of length 1. In stats terms, one vector is one variable and each element is one observation.
 - `c()` combines values. `length()` counts elements (often your *n*).

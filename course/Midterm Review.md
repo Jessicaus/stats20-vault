@@ -13,13 +13,13 @@ r_files: ["r/midterm-practice.R"]
 > Not on it: Section 2.9 (lists, apply, data frames in depth). The Boolean truth table is provided.
 
 ## Study order (about 3 hours)
-1. [[Ch 2.3 Vectors]]: biggest section, most "predict the output" material
-2. [[Ch 2.8 Logical Expressions]]: NA logic, `&` vs `&&`, `identical` vs `all`
-3. [[Ch 2.4 Data Storage]]: special values, rounding, one-pass variance
-4. [[Ch 2.1-2.2 First Steps and Basics]]: `%%`, `%/%`, order of operations, argument matching
-5. [[Ch 2.10 Data Input and Output]]: `header`, `sep`, row names
-6. [[Ch 2.5-2.7 Packages and Help]] and [[Ch 1 Getting Started]]: quick read
-7. Work through `r/midterm-practice.R` on paper first, then run it to check.
+Start with [[Practice Midterm Patterns]]: the exam is mostly writing short code by hand, and that note shows how much detail each question type needs.
+1. [[Ch 2.8 Logical Expressions]]: parallel vectors, `mean()` and `sum()` of conditions, NA logic, `&` and `|` on numbers
+2. [[Ch 2.3 Vectors]]: subsetting, `x[x]`, recycling warnings, `rep()`, `sample()`, matrices
+3. [[Ch 2.4 Data Storage]]: NA vs NaN counting, floating point explanations, overflow, one-pass vs two-pass
+4. [[Ch 2.1-2.2 First Steps and Basics]]: valid names, `exp()` vs `e` notation, pseudocode, clean code style
+5. [[Ch 2.10 Data Input and Output]], [[Ch 2.5-2.7 Packages and Help]] and [[Ch 1 Getting Started]]: quick read (not on the practice exam)
+6. Do the five free-response patterns on paper, then the quiz in the [[Dashboard]] (section "Practice midterm style").
 
 ## The 15 traps most likely to show up
 1. Coercion hierarchy: **logical < numeric < character**. `c(1, TRUE)` is `1 1`.
@@ -55,5 +55,6 @@ r_files: ["r/midterm-practice.R"]
 > `0 0 0 NA 1` (assigning past the end extends the vector and fills the gap with NA)
 
 ## Links
+- [[Practice Midterm Patterns]]: question types and how detailed answers should be
 - [[Dashboard]]: live quiz and progress tracker (start it first)
 - [[Stats 20 Course Map]]
