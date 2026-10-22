@@ -1,0 +1,13 @@
+# Obsidian
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+
+# macOS
+.DS_Store
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj.user
