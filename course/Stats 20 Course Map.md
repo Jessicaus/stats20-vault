@@ -17,6 +17,8 @@ Intro to Statistical Programming with R · UCLA · Fall 2026 · Prof. Joshua Spa
 > Covers Chapter 1 and Sections 2.1–2.8 and 2.10. **Section 2.9 (lists, apply, data frames in depth) is not on the midterm.**
 > Expect "what does this code output?" questions. See [[Midterm Review]].
 
+Study dashboard (progress tracker and practice quiz): [[Dashboard]]
+
 ## Schedule
 
 | Week | Book sections | Topic | Notes |

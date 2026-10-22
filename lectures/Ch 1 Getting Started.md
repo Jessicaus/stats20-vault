@@ -8,6 +8,7 @@ functions: [getwd, setwd, read.csv, "#"]
 r_files: []
 related: ["[[Ch 2.1-2.2 First Steps and Basics]]", "[[Ch 2.10 Data Input and Output]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 1_Slides.pdf
 ---
 

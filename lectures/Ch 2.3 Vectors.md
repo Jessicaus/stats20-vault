@@ -8,6 +8,7 @@ functions: [c, length, mode, factor, seq, seq_len, seq_along, rep, sample, numer
 r_files: ["r/midterm-practice.R"]
 related: ["[[Ch 2.4 Data Storage]]", "[[Ch 2.8 Logical Expressions]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.3_Slides.pdf
 ---
 

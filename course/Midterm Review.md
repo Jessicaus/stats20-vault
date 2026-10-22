@@ -55,4 +55,5 @@ r_files: ["r/midterm-practice.R"]
 > `0 0 0 NA 1` (assigning past the end extends the vector and fills the gap with NA)
 
 ## Links
+- [[Dashboard]]: live quiz and progress tracker (start it first)
 - [[Stats 20 Course Map]]

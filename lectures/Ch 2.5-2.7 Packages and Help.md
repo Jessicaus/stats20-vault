@@ -8,6 +8,7 @@ functions: [install.packages, library, search, "::", "?", "??", help, help.searc
 r_files: []
 related: ["[[Ch 2.10 Data Input and Output]]", "[[Ch 2.1-2.2 First Steps and Basics]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.5-2.7_Slides.pdf
 ---
 

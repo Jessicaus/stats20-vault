@@ -8,6 +8,7 @@ functions: [as.logical, as.numeric, as.character, "==", "!=", round, all.equal, 
 r_files: ["r/midterm-practice.R"]
 related: ["[[Ch 2.3 Vectors]]", "[[Ch 2.4 Data Storage]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.8_Slides.pdf
 ---
 

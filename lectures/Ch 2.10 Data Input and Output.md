@@ -8,6 +8,7 @@ functions: [read.table, read.csv, read.csv2, read.delim, read.fwf, write.table, 
 r_files: []
 related: ["[[Ch 1 Getting Started]]", "[[Ch 2.4 Data Storage]]", "[[Ch 2.5-2.7 Packages and Help]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.10_Slides.pdf
 ---
 

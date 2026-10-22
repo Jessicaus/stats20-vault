@@ -8,6 +8,7 @@ functions: [typeof, mode, is.na, is.nan, is.null, is.infinite, var]
 r_files: ["r/midterm-practice.R"]
 related: ["[[Ch 2.3 Vectors]]", "[[Ch 2.8 Logical Expressions]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.4_Slides.pdf
 ---
 

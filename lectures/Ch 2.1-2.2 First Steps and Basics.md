@@ -8,6 +8,7 @@ functions: ["%%", "%/%", "<-", rm, ls, objects, log, exp, q]
 r_files: ["r/midterm-practice.R"]
 related: ["[[Ch 2.3 Vectors]]", "[[Ch 2.8 Logical Expressions]]"]
 on_midterm: true
+reviewed: false
 source: Chapter 2.1-2.2_Slides.pdf
 ---
 
